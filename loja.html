@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas | Loja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+<body>
+
+    <header id="nav-bar">
+        <section id="logo">
+            <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+        </section>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+
+        <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+    <main>
+        <h1>Loja Mercedes</h1>
+
+        <p>
+            Confira algumas categorias de produtos relacionados
+            à Mercedes-AMG Petronas.
+        </p>
+
+        <p>
+            <a href="#pesquisa">Pesquisar produtos</a> |
+            <a href="#carrinho">Meu carrinho (<span id="quantidade-carrinho">0</span>)</a>
+        </p>
+
+        <section id="inicio-loja">
+            <h2>Loja de produtos Mercedes-AMG Petronas</h2>
+            <p>
+                Encontre produtos inspirados na equipe Mercedes-AMG Petronas
+                de Fórmula 1.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="pesquisa">
+            <h2>Pesquisar produtos</h2>
+
+            <form id="form-pesquisa">
+                <label for="campo-pesquisa">O que você está procurando?</label>
+                <input
+                    type="search"
+                    id="campo-pesquisa"
+                    placeholder="Digite o nome do produto..."
+                >
+
+                <label for="filtro-categoria">Categoria:</label>
+                <select id="filtro-categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="roupas">Roupas</option>
+                    <option value="mini-carro">Mini-carro</option>
+                    <option value="capacetes">Capacetes</option>
+                    <option value="chaveirinho">Chaveirinho</option>
+                </select>
+
+                <button type="button" id="limpar-pesquisa">Limpar pesquisa</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="produtos">
+            <h2>Todos os produtos</h2>
+            <p id="resultado-pesquisa"></p>
+
+            <div id="lista-produtos">
+                <!-- Os produtos serão inseridos pelo JavaScript. -->
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="carrinho">
+            <h2>Meu carrinho de compras</h2>
+
+            <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+
+            <div id="itens-carrinho">
+                <!-- Os produtos adicionados serão exibidos aqui. -->
+            </div>
+
+            <div id="resumo-carrinho" hidden>
+                <h3>Resumo da compra</h3>
+
+                <p>
+                    Quantidade de produtos:
+                    <span id="total-itens">0</span>
+                </p>
+
+                <p>
+                    Subtotal:
+                    <strong id="subtotal">R$ 0,00</strong>
+                </p>
+
+                <p>
+                    Frete:
+                    <strong id="frete">R$ 0,00</strong>
+                </p>
+
+                <p>
+                    Total:
+                    <strong id="total-compra">R$ 0,00</strong>
+                </p>
+
+                <button type="button" id="finalizar-compra">
+                    Finalizar compra
+                </button>
+
+                <button type="button" id="limpar-carrinho">
+                    Esvaziar carrinho
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+
+    <script>
+        
+
+        const produtos = [
+            {
+                id: 1,
+                nome: "Camiseta Mercedes-AMG Petronas",
+                categoria: "roupas",
+                preco: 249.90,
+                imagem: "IMG/Camiseta Mercedes-AMG Petronas.webp"
+            },
+            {
+                id: 2,
+                nome: "Camiseta Team Lewis Hamilton",
+                categoria: "roupas",
+                preco: 279.90,
+                imagem: "IMG/Camiseta Team Lewis Hamilton.jpg"
+            },
+            {
+                id: 3,
+                nome: "Camiseta Team George Russell",
+                categoria: "roupas",
+                preco: 279.90,
+                imagem: "IMG/Camiseta Team George Russell.webp"
+            },
+            {
+                id: 4,
+                nome: "Jaqueta Mercedes-AMG",
+                categoria: "roupas",
+                preco: 599.90,
+                imagem: "IMG/Jaqueta Mercedes-AMG.avif"
+            },
+            {
+                id: 5,
+                nome: "Boné Mercedes-AMG Petronas",
+                categoria: "roupas",
+                preco: 189.90,
+                imagem: "IMG/Boné Mercedes-AMG Petronas.avif"
+            },
+            {
+                id: 6,
+                nome: "Moletom Mercedes-AMG",
+                categoria: "roupas",
+                preco: 399.90,
+                imagem: "IMG/Moletom Mercedes-AMG.avif"
+            },
+            {
+                id: 7,
+                nome: "Miniatura Mercedes W11",
+                categoria: "mini-carro",
+                preco: 349.90,
+                imagem: "IMG/Miniatura Mercedes W11.webp"
+            },
+            {
+                id: 8,
+                nome: "Miniatura Mercedes W12",
+                categoria: "mini-carro",
+                preco: 349.90,
+                imagem: "IMG/Miniatura Mercedes W12.jpeg"
+            },
+            {
+                id: 9,
+                nome: "Miniatura Mercedes W13",
+                categoria: "mini-carro",
+                preco: 329.90,
+                imagem: "IMG/Miniatura Mercedes W13.jpg"
+            },
+            {
+                id: 10,
+                nome: "Miniatura Mercedes W17",
+                categoria: "mini-carro",
+                preco: 399.90,
+                imagem: "IMG/Miniatura Mercedes W17.webp"
+            },
+            {
+                id: 11,
+                nome: "Capacete Kimi Antonelli",
+                categoria: "capacetes",
+                preco: 899.90,
+                imagem: "IMG/Capacete Kimi.avif"
+            },
+            {
+                id: 12,
+                nome: "Capacete George Russell",
+                categoria: "capacetes",
+                preco: 899.90,
+                imagem: "IMG/Capacete George Russell.jpg"
+            },
+            {
+                id: 13,
+                nome: "Mini capacete Mercedes",
+                categoria: "capacetes",
+                preco: 499.90,
+                imagem: "IMG/Mini capacete Mercedes.webp"
+            },
+            {
+                id: 14,
+                nome: "Chaveiro Mercedes-AMG",
+                categoria: "chaveirinho",
+                preco: 49.90,
+                imagem: "IMG/Chaveiro Mercedes-AMG.webp"
+            },
+            {
+                id: 15,
+                nome: "Chaveiro Volante F1",
+                categoria: "chaveirinho",
+                preco: 59.90,
+                imagem: "IMG/Chaveiro Volante F1.webp"
+            },
+            {
+                id: 16,
+                nome: "Chaveiro Mini Capacete",
+                categoria: "chaveirinho",
+                preco: 39.90,
+                imagem: "IMG/Chaveiro Mini Capacete.webp"
+            }
+        ];
+
+        // Recupera o carrinho salvo no navegador.
+        let carrinho = JSON.parse(
+            localStorage.getItem("carrinhoMercedes")
+        ) || [];
+
+        const listaProdutos = document.getElementById("lista-produtos");
+        const itensCarrinho = document.getElementById("itens-carrinho");
+        const carrinhoVazio = document.getElementById("carrinho-vazio");
+        const resumo = document.getElementById("resumo-carrinho");
+
+        // Formata os valores em reais.
+        function formatarPreco(valor) {
+            return valor.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+        }
+
+        // Mostra os produtos na loja.
+        function mostrarProdutos(lista) {
+            listaProdutos.innerHTML = "";
+
+            document.getElementById("resultado-pesquisa").textContent =
+                lista.length + " produto(s) encontrado(s).";
+
+            if (lista.length === 0) {
+                listaProdutos.textContent = "Nenhum produto encontrado.";
+                return;
+            }
+
+            lista.forEach(function(produto) {
+                const artigo = document.createElement("article");
+
+                const imagem = document.createElement("img");
+                imagem.src = produto.imagem;
+                imagem.alt = produto.nome;
+                imagem.width = 150;
+
+                const nome = document.createElement("h3");
+                nome.textContent = produto.nome;
+
+                const preco = document.createElement("p");
+                preco.textContent = formatarPreco(produto.preco);
+
+                const botao = document.createElement("button");
+                botao.type = "button";
+                botao.textContent = "Adicionar ao carrinho";
+
+                botao.addEventListener("click", function() {
+                    adicionarCarrinho(produto.id);
+                });
+
+                artigo.appendChild(imagem);
+                artigo.appendChild(nome);
+                artigo.appendChild(preco);
+                artigo.appendChild(botao);
+
+                listaProdutos.appendChild(artigo);
+            });
+        }
+
+        // Pesquisa e filtra os produtos.
+        function filtrarProdutos() {
+            const pesquisa = document
+                .getElementById("campo-pesquisa")
+                .value
+                .toLowerCase();
+
+            const categoria = document.getElementById("filtro-categoria").value;
+
+            const produtosFiltrados = produtos.filter(function(produto) {
+                const nomeCombina = produto.nome.toLowerCase().includes(pesquisa);
+                const categoriaCombina =
+                    categoria === "todos" || produto.categoria === categoria;
+
+                return nomeCombina && categoriaCombina;
+            });
+
+            mostrarProdutos(produtosFiltrados);
+        }
+
+        document.getElementById("campo-pesquisa").addEventListener(
+            "input",
+            filtrarProdutos
+        );
+
+        document.getElementById("filtro-categoria").addEventListener(
+            "change",
+            filtrarProdutos
+        );
+
+        document.getElementById("limpar-pesquisa").addEventListener(
+            "click",
+            function() {
+                document.getElementById("campo-pesquisa").value = "";
+                document.getElementById("filtro-categoria").value = "todos";
+                mostrarProdutos(produtos);
+            }
+        );
+
+        // Salva o carrinho no navegador.
+        function salvarCarrinho() {
+            localStorage.setItem(
+                "carrinhoMercedes",
+                JSON.stringify(carrinho)
+            );
+        }
+
+        // Adiciona um produto ao carrinho.
+        function adicionarCarrinho(id) {
+            const produto = produtos.find(function(item) {
+                return item.id === id;
+            });
+
+            const itemExistente = carrinho.find(function(item) {
+                return item.id === id;
+            });
+
+            if (itemExistente) {
+                itemExistente.quantidade++;
+            } else {
+                carrinho.push({
+                    id: produto.id,
+                    nome: produto.nome,
+                    preco: produto.preco,
+                    quantidade: 1
+                });
+            }
+
+            salvarCarrinho();
+            atualizarCarrinho();
+
+            alert(produto.nome + " foi adicionado ao carrinho!");
+        }
+
+        // Altera a quantidade de um produto.
+        function alterarQuantidade(id, mudanca) {
+            const item = carrinho.find(function(produto) {
+                return produto.id === id;
+            });
+
+            if (!item) {
+                return;
+            }
+
+            item.quantidade += mudanca;
+
+            if (item.quantidade <= 0) {
+                removerProduto(id);
+                return;
+            }
+
+            salvarCarrinho();
+            atualizarCarrinho();
+        }
+
+        // Remove um produto do carrinho.
+        function removerProduto(id) {
+            carrinho = carrinho.filter(function(item) {
+                return item.id !== id;
+            });
+
+            salvarCarrinho();
+            atualizarCarrinho();
+        }
+
+        // Atualiza todos os dados do carrinho.
+        function atualizarCarrinho() {
+            itensCarrinho.innerHTML = "";
+
+            let quantidadeTotal = 0;
+            let subtotal = 0;
+
+            carrinho.forEach(function(item) {
+                quantidadeTotal += item.quantidade;
+                subtotal += item.preco * item.quantidade;
+
+                const artigo = document.createElement("article");
+
+                const nome = document.createElement("h3");
+                nome.textContent = item.nome;
+
+                const preco = document.createElement("p");
+                preco.textContent =
+                    "Preço unitário: " + formatarPreco(item.preco);
+
+                const quantidade = document.createElement("p");
+                quantidade.textContent = "Quantidade: " + item.quantidade;
+
+                const totalItem = document.createElement("p");
+                totalItem.textContent =
+                    "Subtotal do produto: " +
+                    formatarPreco(item.preco * item.quantidade);
+
+                const diminuir = document.createElement("button");
+                diminuir.type = "button";
+                diminuir.textContent = "-";
+                diminuir.setAttribute("aria-label", "Diminuir quantidade");
+
+                diminuir.addEventListener("click", function() {
+                    alterarQuantidade(item.id, -1);
+                });
+
+                const aumentar = document.createElement("button");
+                aumentar.type = "button";
+                aumentar.textContent = "+";
+                aumentar.setAttribute("aria-label", "Aumentar quantidade");
+
+                aumentar.addEventListener("click", function() {
+                    alterarQuantidade(item.id, 1);
+                });
+
+                const remover = document.createElement("button");
+                remover.type = "button";
+                remover.textContent = "Remover produto";
+
+                remover.addEventListener("click", function() {
+                    removerProduto(item.id);
+                });
+
+                artigo.appendChild(nome);
+                artigo.appendChild(preco);
+                artigo.appendChild(quantidade);
+                artigo.appendChild(totalItem);
+                artigo.appendChild(diminuir);
+                artigo.appendChild(aumentar);
+                artigo.appendChild(remover);
+
+                itensCarrinho.appendChild(artigo);
+            });
+
+            const frete = subtotal === 0 ? 0 : (subtotal >= 300 ? 0 : 25);
+            const total = subtotal + frete;
+
+            document.getElementById("quantidade-carrinho").textContent =
+                quantidadeTotal;
+
+            document.getElementById("total-itens").textContent =
+                quantidadeTotal;
+
+            document.getElementById("subtotal").textContent =
+                formatarPreco(subtotal);
+
+            document.getElementById("frete").textContent =
+                frete === 0 && subtotal > 0
+                    ? "Grátis"
+                    : formatarPreco(frete);
+
+            document.getElementById("total-compra").textContent =
+                formatarPreco(total);
+
+            carrinhoVazio.hidden = carrinho.length > 0;
+            resumo.hidden = carrinho.length === 0;
+        }
+
+        // Esvazia o carrinho.
+        document.getElementById("limpar-carrinho").addEventListener(
+            "click",
+            function() {
+                if (confirm("Deseja realmente esvaziar o carrinho?")) {
+                    carrinho = [];
+                    salvarCarrinho();
+                    atualizarCarrinho();
+                }
+            }
+        );
+
+        // Finalização demonstrativa.
+        document.getElementById("finalizar-compra").addEventListener(
+            "click",
+            function() {
+                if (carrinho.length === 0) {
+                    alert("Seu carrinho está vazio.");
+                    return;
+                }
+
+                alert(
+                    "Compra demonstrativa realizada!\n" +
+                    "Este projeto não possui pagamento real."
+                );
+            }
+        );
+
+        // Carrega os produtos e o carrinho ao abrir a página.
+        mostrarProdutos(produtos);
+        atualizarCarrinho();
+    </script>
+
+    <script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+
+</body>
+</html>

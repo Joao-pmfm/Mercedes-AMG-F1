@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+
+<body>
+    <div>
+    <header id="nav-bar">
+        <section id="logo">
+   <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+</section>
+        <nav aria-label="Principal">
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+         <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+      </header>
+    </div>
+
+    <div id="titulo-atuais"><h1>Pilotos Atuais</h1></div>
+
+    <div id="piloto-antonelli">
+        <h2>Kimi Antonelli</h2>
+        <img src="IMG/kimi-860x484.jpg">
+        <p>
+            Andrea Kimi Antonelli representa uma das apostas mais importantes da Mercedes para o futuro. Nascido na Itália, o jovem piloto construiu sua trajetória nas categorias de base com resultados expressivos, chamando a atenção do programa de desenvolvimento de jovens pilotos da equipe.
+
+Promovido à Fórmula 1 em 2025, Antonelli recebeu a difícil missão de substituir Lewis Hamilton, um dos maiores nomes da história da categoria. Sua chegada simbolizou a confiança da Mercedes em uma nova geração de talentos. Mesmo diante da pressão de estrear em uma equipe de grande tradição, o italiano representa um projeto de longo prazo para o time alemão.
+        </p>
+    </div>
+    <div id="piloto-russell">
+        <h2>George Russell</h2>
+        <img src="IMG/images.jpg" alt="">
+        <p>George Russell chegou à Mercedes em 2022, após três temporadas competindo pela Williams. Considerado um dos talentos mais promissores de sua geração, o britânico conquistou a oportunidade de integrar uma das principais equipes do grid após demonstrar velocidade, consistência e capacidade de desenvolvimento.
+
+            Sua primeira vitória na Fórmula 1 aconteceu no Grande Prêmio de São Paulo de 2022, em uma atuação marcante que também garantiu à Mercedes sua única vitória naquela temporada. Russell se destacou pela capacidade de classificação, regularidade e habilidade para aproveitar oportunidades em corridas difíceis. Com a saída de Lewis Hamilton ao final de 2024, assumiu um papel ainda mais importante na liderança esportiva da equipe.</p>
+    </div>
+
+<div id="titulo-antigos"><h1>Pilotos Antigos</h1></div>
+
+<div id="piloto-hamilton">
+    <h2>Lewis Hamilton (2013–2024)</h2>
+    <img src="IMG/SURCVBRZFVC5BJDCG4Z3OL5UKU.avif" alt="">
+<P>Um dos maiores pilotos da história da Fórmula 1 e principal símbolo da era dominante da Mercedes. Durante sua passagem pela equipe, conquistou seis campeonatos mundiais de pilotos, além de dezenas de vitórias e recordes. Sua parceria com a Mercedes foi fundamental para a conquista de oito títulos consecutivos de construtores.</P>
+</div>
+
+<div id="piloto-rosberg">
+    <h2>Nico Rosberg (2010–2016)</h2>
+    <img src="IMG/626407458.webp" alt="">
+<P>Foi um dos primeiros pilotos da Mercedes em seu retorno como equipe oficial à Fórmula 1. Construiu uma rivalidade histórica com Lewis Hamilton, especialmente entre 2014 e 2016. Em 2016, após uma temporada extremamente disputada, conquistou seu primeiro título mundial e anunciou sua aposentadoria poucos dias depois.</P>
+</div>
+
+<div id="piloto-schumacher">
+    <h2>Michael Schumacher (2010–2012)</h2>
+    <img src="IMG/images (1).jpg" alt="">
+<P>Sete vezes campeão mundial, Schumacher retornou à Fórmula 1 em 2010 para integrar o projeto da Mercedes. Embora não tenha conquistado vitórias nessa segunda passagem, sua experiência foi importante para o desenvolvimento da equipe e para a construção da estrutura que posteriormente se tornaria dominante.</P>
+</div>
+
+<div id="piloto-bottas">
+    <H2>Valtteri Bottas (2017–2021)</H2>
+    <img src="IMG/images (2).jpg" alt="">
+<P>Substituiu Rosberg em 2017 e tornou-se um parceiro fundamental para Lewis Hamilton. Conquistou dez vitórias pela Mercedes e ajudou a equipe a manter sua sequência de títulos de construtores. Sua consistência e capacidade de somar pontos foram essenciais durante uma das fases mais competitivas da categoria.</P>
+</div>
+
+<footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+
+<script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+</body>
+</html>

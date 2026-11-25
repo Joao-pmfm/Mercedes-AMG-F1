@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas | Histórico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+<body>
+
+    <header id="nav-bar">
+       <section id="logo">
+        <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+    </section>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+         <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+    </header>
+
+    <main>
+
+        <h1>Histórico da Mercedes</h1>
+
+        <section>
+            <h2>Campeonatos de Construtores conquistados</h2>
+
+            <p>Entre 2014 e 2021, a Mercedes protagonizou uma 
+              das maiores sequências de domínio da história da 
+              Fórmula 1. Foram oito títulos consecutivos do 
+              Campeonato Mundial de Construtores, uma marca que 
+              consolidou a equipe como uma das maiores potências da categoria. 
+            </p>
+
+            <p>O sucesso foi resultado de uma combinação de fatores: 
+              motores híbridos extremamente eficientes, carros competitivos, 
+              pilotos de alto nível, estratégias bem executadas e uma estrutura 
+              técnica capaz de evoluir constantemente.
+            </p>
+
+            <p>A seguir, cada conquista é apresentada individualmente, 
+              destacando as vitórias e os principais desafios enfrentados 
+              durante as temporadas.
+            </p>
+
+            <article>
+                <h3>2014</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Nico Rosberg.</li>
+                    <li>Pontuação: 701 pontos.</li>
+                    <li>Vitórias: 16.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+                    A Mercedes iniciou uma era dominante com o W05 Hybrid,
+                    conquistando seu primeiro título de construtores
+                    da era híbrida. Com o W05 Hybrid, a equipe demonstrou 
+                    uma superioridade impressionante, principalmente pelo 
+                    desempenho de sua unidade de potência.
+                </p>
+                
+                <p>Hamilton e Rosberg protagonizaram uma disputa interna intensa, 
+                  vencendo 16 das 19 corridas disputadas. Rosberg venceu na Austrália, 
+                  enquanto Hamilton respondeu com uma sequência de vitórias em pistas como 
+                  Malásia, Bahrein, China e Espanha.
+                </p>
+
+                <p>
+                  Entre os momentos mais importantes estiveram as vitórias de 
+                  ambos em circuitos tradicionais, como Silverstone, Monza e 
+                  Interlagos. A equipe também enfrentou problemas de confiabilidade, 
+                  especialmente com o carro de Hamilton, que abandonou algumas 
+                  corridas por dificuldades mecânicas.
+                  </p>
+
+                 <p>
+                  A rivalidade entre os companheiros ficou ainda mais 
+                  evidente no Grande Prêmio da Bélgica, quando um contato entre 
+                  os dois comprometeu a corrida de Hamilton e provocou uma crise 
+                  interna. Mesmo assim, a Mercedes conquistou o primeiro título de 
+                  construtores de sua nova era com três corridas de antecedência.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>2015</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Nico Rosberg.</li>
+                    <li>Pontuação: 703 pontos.</li>
+                    <li>Vitórias: 16.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+                Em 2015, a Mercedes confirmou que seu sucesso não havia 
+                sido apenas resultado de uma vantagem inicial sobre os adversários. 
+                O W06 Hybrid manteve a equipe no topo, permitindo mais uma temporada de domínio.
+                </p>
+                <p>
+                Hamilton conquistou dez vitórias, enquanto Rosberg venceu 
+                seis corridas. A equipe também alcançou 12 dobradinhas, 
+                demonstrando sua capacidade de controlar as provas e colocar 
+                seus dois pilotos nas primeiras posições.
+                </p>
+
+                <p>
+                  O principal adversário foi a Ferrari, que apresentou uma 
+                  evolução significativa com Sebastian Vettel. A equipe italiana 
+                  conseguiu vitórias importantes na Malásia, Hungria e Singapura.
+                </p>
+
+                <p>
+                  O Grande Prêmio de Singapura foi um dos momentos mais 
+                  difíceis para a Mercedes: os dois carros tiveram dificuldades 
+                  de desempenho, Hamilton abandonou e Rosberg terminou apenas 
+                  em quarto lugar.
+                </p>
+
+                <p>
+                  Apesar dessa adversidade, a Mercedes conquistou o título de 
+                  construtores na Rússia, com quatro etapas de antecedência. 
+                  Hamilton também garantiu seu terceiro campeonato mundial de pilotos.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>2016</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Nico Rosberg.</li>
+                    <li>Pontuação: 765 pontos.</li>
+                    <li>Vitórias: 19.</li>
+                    <li>Campeão de pilotos: Nico Rosberg.</li>
+                </ul>
+                <p>
+A temporada de 2016 foi a mais dominante da Mercedes em número de vitórias durante sua sequência de oito títulos. Com o W07 Hybrid, 
+a equipe venceu 19 das 21 corridas do calendário, a temporada foi marcada pela rivalidade entre Hamilton e Rosberg.
+                </p>
+                <p>
+Rosberg começou o campeonato de maneira extraordinária, vencendo as quatro primeiras etapas. Hamilton enfrentou 
+dificuldades em algumas largadas e problemas mecânicos, mas conseguiu reagir ao longo do campeonato.
+                </p>
+                 <p>
+Um dos momentos mais marcantes aconteceu no Grande Prêmio da Espanha, quando os dois pilotos colidiram 
+ainda na primeira volta e abandonaram a prova. Outro episódio decisivo ocorreu na Malásia, quando Hamilton liderava a corrida e sofreu uma quebra de motor.
+                </p>
+                 <p>
+Mesmo com esses acontecimentos, a Mercedes garantiu mais um título de construtores. 
+Rosberg venceu o campeonato de pilotos por apenas cinco pontos de vantagem sobre Hamilton.
+                </p>
+                <p>
+Poucos dias depois de conquistar seu primeiro título mundial, Rosberg anunciou sua aposentadoria da Fórmula 1, surpreendendo a equipe e o mundo do automobilismo.
+                </p>  
+      </article>
+
+            <article>
+                <h3>2017</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Valtteri Bottas.</li>
+                    <li>Pontuação: 668 pontos.</li>
+                    <li>Vitórias: 12.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+Após a inesperada aposentadoria de Nico Rosberg, a Mercedes contratou Valtteri Bottas para formar dupla com Hamilton. A mudança trouxe uma nova dinâmica para a equipe.
+                </p>
+                <p>
+O W08 EQ Power+ era extremamente competitivo, mas apresentou dificuldades de comportamento em determinadas pistas, recebendo internamente a fama de carro temperamental.
+                </p>
+                <p>
+A Ferrari, com Sebastian Vettel e Kimi Räikkönen, tornou-se uma adversária muito mais forte, disputando a liderança do campeonato durante boa parte da temporada.
+                </p>
+                 <p>
+Hamilton venceu nove corridas, enquanto Bottas conquistou suas três primeiras vitórias na Fórmula 1: Rússia, Áustria e Abu Dhabi.
+                </p>
+                 <p>
+Um dos momentos importantes foi a vitória de Hamilton no Grande Prêmio da Itália, em Monza, que ajudou a equipe a assumir uma posição mais confortável no campeonato. 
+A Mercedes conseguiu superar a Ferrari e conquistou seu quarto título consecutivo de construtores.
+                </p>
+            </article>
+
+            <article>
+                <h3>2018</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Valtteri Bottas.</li>
+                    <li>Pontuação: 655 pontos.</li>
+                    <li>Vitórias: 11.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+A temporada de 2018 foi uma das mais disputadas da era híbrida. A Ferrari apresentou um carro muito competitivo e, em diversas ocasiões, 
+demonstrou possuir vantagem de desempenho sobre a Mercedes.
+                </p>
+                <p>
+O W09 EQ Power+ precisou passar por diversas atualizações para acompanhar os adversários. A equipe também enfrentou dificuldades 
+relacionadas aos pneus, especialmente em circuitos de temperaturas elevadas.
+                </p>
+                <p>
+Hamilton foi o grande destaque da temporada, conquistando 11 vitórias e seu quinto título mundial. Bottas, por outro lado, 
+terminou o campeonato sem vencer nenhuma corrida, apesar de ter demonstrado bom desempenho em diversas etapas.
+                </p>
+                 <p>
+A Mercedes conquistou o título de construtores no Grande Prêmio do Brasil, garantindo sua quinta conquista consecutiva. 
+O resultado reforçou a capacidade da equipe de superar adversidades mesmo quando não possuía o carro mais rápido em todas as corridas.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>2019</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Valtteri Bottas.</li>
+                    <li>Pontuação: 739 pontos.</li>
+                    <li>Vitórias: 15.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+Em 2019, a Mercedes começou a temporada de maneira praticamente perfeita. A equipe venceu as cinco primeiras corridas com dobradinhas, 
+um feito extraordinário que demonstrou sua superioridade no início do campeonato.
+                </p>
+                <p>
+Hamilton e Bottas dividiram as vitórias, enquanto a Ferrari enfrentava dificuldades para transformar seu potencial em resultados consistentes.
+                </p>
+                <p>
+O W10 EQ Power+ apresentava excelente equilíbrio aerodinâmico e bom desempenho em diferentes tipos de circuito. Hamilton conquistou 11 vitórias, 
+enquanto Bottas venceu quatro vezes.
+                </p>
+                 <p>
+Entre os momentos marcantes estiveram as vitórias em Mônaco, Silverstone, Hungria e México. A equipe também enfrentou desafios relacionados ao 
+superaquecimento dos pneus em algumas corridas.
+                </p>
+                 <p>
+Em junho de 2019, a Fórmula 1 perdeu Niki Lauda, presidente não executivo e uma das figuras mais importantes da estrutura da Mercedes. 
+Sua morte representou uma perda significativa para a equipe.
+                </p>
+                <p>
+                  Ao final do ano, a Mercedes conquistou seu sexto título consecutivo de construtores, igualando a sequência histórica da Ferrari entre 1999 e 2004.
+                </p>
+            </article>
+
+            <article>
+                <h3>2020</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Valtteri Bottas.</li>
+                    <li>Pontuação: 573 pontos.</li>
+                    <li>Vitórias: 13.</li>
+                    <li>Campeão de pilotos: Lewis Hamilton.</li>
+                </ul>
+
+                <p>
+A temporada de 2020 foi completamente diferente das anteriores. A pandemia de COVID-19 provocou o adiamento do início do campeonato e obrigou a 
+Fórmula 1 a reorganizar seu calendário, realizando corridas sem público e adotando rigorosos protocolos sanitários.
+                </p>
+                <p>
+Mesmo diante dessas dificuldades, a Mercedes apresentou o W11 EQ Performance, considerado um dos carros mais dominantes de sua história.
+                </p>
+                <p>
+Hamilton conquistou 11 vitórias e igualou o recorde de sete títulos mundiais de Michael Schumacher. Bottas também contribuiu com duas vitórias importantes.
+                </p>
+                 <p>
+Um dos momentos mais marcantes foi a introdução da pintura preta nos carros, em uma iniciativa de apoio à diversidade e ao combate ao racismo.
+                </p>
+                 <p>
+A equipe também enfrentou um episódio inesperado quando Hamilton testou positivo para COVID-19 e precisou ficar de fora do Grande Prêmio de Sakhir. George Russell foi chamado para substituí-lo e quase conquistou a vitória em sua estreia pela Mercedes, mas problemas durante a corrida impediram o resultado.
+Apesar das dificuldades, a equipe garantiu seu sétimo título consecutivo de construtores.
+                </p>
+            </article>
+
+            <article>
+                <h3>2021</h3>
+
+                <ul>
+                    <li>Pilotos: Lewis Hamilton e Valtteri Bottas.</li>
+                    <li>Pontuação: 613,5 pontos.</li>
+                    <li>Vitórias: 9.</li>
+                    <li>Campeão de pilotos: Max Verstappen.</li>
+                </ul>
+
+                <p>
+A temporada de 2021 foi marcada por uma das maiores disputas da história da Fórmula 1. A Mercedes enfrentou uma Red Bull extremamente competitiva, 
+liderada por Max Verstappen e impulsionada por um projeto técnico muito forte.
+                </p>
+                <p>
+O W12 precisou superar dificuldades de desempenho no início do campeonato, especialmente em comparação com o carro da Red Bull. Hamilton conquistou oito vitórias, enquanto Bottas venceu uma corrida.
+                </p>
+                <p>
+Ao longo da temporada, a disputa entre Hamilton e Verstappen ficou cada vez mais intensa, com colisões, penalidades e decisões estratégicas que influenciaram diretamente o campeonato.
+                </p>
+                 <p>
+A Mercedes também precisou lidar com a pressão de uma batalha que se estendeu até a última corrida, em Abu Dhabi.
+                </p>
+                 <p>
+Naquela etapa, Hamilton liderava e estava muito próximo de conquistar seu oitavo título mundial, mas uma intervenção do safety car e a polêmica aplicação dos procedimentos de relargada alteraram o desfecho da prova.
+ Verstappen ultrapassou Hamilton na última volta e conquistou o campeonato de pilotos.
+                </p>
+                <p>
+Apesar da derrota individual, a Mercedes venceu o campeonato de construtores pela oitava vez consecutiva, estabelecendo um recorde histórico. Foi o encerramento de uma das eras mais vitoriosas já vistas na Fórmula 1.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+   <footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+<script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+</body>
+</html>

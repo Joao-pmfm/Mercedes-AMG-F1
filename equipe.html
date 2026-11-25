@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas | Equipe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+<body>
+
+    <header id="nav-bar">
+        <section id="logo">
+            <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+        </section>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+         <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+    </header>
+
+    <main>
+
+        <h1>Equipe e Gestão</h1>
+
+        <section>
+            <h2>Principais responsáveis</h2>
+
+            <article>
+                <img src="IMG/toto.jpg" alt="Toto Wolff">
+
+                <h3>Toto Wolff</h3>
+
+                <p>Cargo: CEO e chefe de equipe.</p>
+
+                <p>
+                    Toto Wolff é um dos principais responsáveis
+                    pelo sucesso moderno da Mercedes na Fórmula 1.
+                    Desde 2013, 
+                    Wolff lidera a estrutura esportiva da equipe,
+                    participando de decisões estratégicas, 
+                    administrativas e técnicas. 
+                    Sua gestão ficou marcada pela organização interna, 
+                    pela cobrança por excelência e pela capacidade de manter 
+                    uma equipe competitiva durante anos.
+
+                </p>
+            </article>
+
+          <article>
+            <img src="IMG/ola.jpg" alt="Ola Källenius">
+
+                <h3>Ola Källenius</h3>
+
+                <p>Cargo: Liderança da Mercedes-Benz.</p>
+
+                <p>
+                    Como presidente do conselho de administração da
+                    Mercedes-Benz Group, representa a liderança 
+                    corporativa da montadora responsável pela 
+                    marca Mercedes. Sua atuação está ligada às 
+                    decisões estratégicas do grupo e à relação
+                    entre a marca automotiva e seus projetos esportivos.
+
+                </p>
+          </article>
+
+
+            <article>
+                <img src="IMG/james.jpg" alt="James Allison">
+
+                <h3>James Allison</h3>
+
+                <p>Cargo: Diretor técnico.</p>
+
+                <p>
+                    Responsável pela coordenação técnica e pelo
+                    desenvolvimento dos projetos de engenharia
+                    dos carros da Mercedes. 
+                    Engenheiro de grande experiência na Fórmula 1,
+                    Allison teve papel importante no desenvolvimento
+                    dos carros da Mercedes. Seu trabalho envolve a 
+                    coordenação técnica e a integração de diferentes 
+                    departamentos de engenharia, buscando soluções para 
+                    melhorar aerodinâmica, desempenho e confiabilidade.
+
+                </p>
+            </article>
+
+            <article>
+                <img src="IMG/bradley.jpg" alt="Bradley Lord">
+
+                <h3>Bradley Lord</h3>
+
+                <p>
+                    Atua na estrutura de liderança e no relacionamento
+                    institucional da equipe. Um dos principais nomes 
+                    da comunicação da equipe, participa da gestão de 
+                    relacionamento com a imprensa, parceiros e demais 
+                    públicos. Seu trabalho é importante para manter a 
+                    identidade institucional da Mercedes e organizar a 
+                    comunicação de suas atividades esportivas.
+
+                </p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Estrutura da equipe</h2>
+
+            <article>
+                <h3>Brackley</h3>
+
+                <p>
+                    Centro responsável pelo desenvolvimento dos chassis,
+                    aerodinâmica e operações da equipe.
+                </p>
+            </article>
+
+            <article>
+                <h3>Brixworth</h3>
+
+                <p>
+                    Instalação responsável pelo desenvolvimento
+                    das unidades de potência e sistemas híbridos.
+                </p>
+            </article>
+<p>Essa divisão permite que engenheiros especializados trabalhem simultaneamente em diferentes áreas do projeto, buscando extrair o máximo desempenho possível dos carros.
+</p>
+<p>A colaboração entre essas instalações foi um dos principais fatores para o sucesso da Mercedes durante a era híbrida. A eficiência dos motores, a integração entre os sistemas 
+  eletrônicos e mecânicos e o desenvolvimento aerodinâmico ajudaram a equipe a estabelecer uma vantagem competitiva sobre seus adversários.
+</p>
+
+<footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+      <script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+</body>
+</html>

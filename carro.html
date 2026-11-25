@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas | Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+<body>
+
+    <header id="nav-bar">
+        <section id="logo">
+            <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+        </section>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+         <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+    </header>
+
+    <main>
+
+        <h1>Carros da Mercedes</h1>
+
+        <section>
+            <h2>Modelos históricos</h2>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/KlingK-MB-W196-1976.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W196" width="400"
+    height="250">
+
+                <h3>Mercedes-Benz W196 (1954–1955)</h3>
+
+                <p>
+                    Um dos carros mais importantes da primeira passagem da Mercedes pela Fórmula 1, pilotado por nomes como
+                    Juan Manuel Fangio e Stirling Moss, conquistou importantes vitórias e ajudou a construir a reputação da Mercedes no automobilismo internacional.
+
+                </p>
+            </article>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Mercedes_F1_W05_Hybrid_%28Lewis_Hamilton%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W05" width="400">
+
+                <h3>Mercedes F1 W05 Hybrid (2014)</h3>
+
+                <p>
+ O W05 marcou o início da hegemonia moderna da Mercedes. Desenvolvido para a nova geração de motores híbridos, destacou-se pela eficiência de sua unidade de potência e pela 
+ capacidade de administrar energia durante as corridas.
+</p>
+                <p>
+  Foi o carro responsável por conquistar o primeiro título de construtores da equipe na era moderna, com 16 vitórias em 19 corridas.
+</p>
+
+            
+            </article>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Lewis_Hamilton_2016_Malaysia_FP2_1.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W07" width="400">
+
+                <h3>Mercedes F1 W07 Hybrid (2016)</h3>
+
+                <p>
+                    Conquistou 19 vitórias em 21 corridas, apresentando um nível extraordinário de desempenho e confiabilidade, sendo considerado um dos carros mais dominantes
+                    da categoria. Foi pilotado por Lewis Hamilton e Nico Rosberg, que protagonizaram uma disputa interna pelo título mundial até a última etapa.
+
+                </p>
+            </article>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Lewis_Hamilton_2020_Tuscan_Grand_Prix_-_race_day_%28cropped%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W11"width="400">
+
+                <h3>Mercedes-AMG F1 W11 (2020)</h3>
+
+                <p>
+O W11 é frequentemente lembrado como uma das maiores obras de engenharia da era híbrida. Seu projeto combinava excelente aerodinâmica, 
+unidade de potência eficiente e soluções técnicas inovadoras.
+</p>
+                <p>
+O carro ficou conhecido pela pintura predominantemente preta, adotada em 2020, e pelo sistema DAS (Dual Axis Steering), que permitia ao piloto ajustar a 
+convergência das rodas dianteiras por meio do movimento do volante.
+Com ele, Hamilton conquistou 11 vitórias e seu sétimo título mundial, enquanto a Mercedes garantiu seu sétimo campeonato consecutivo de construtores.
+</p>
+            </article>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/FIA_F1_Austria_2021_Nr._44_Hamilton.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W12" width="400"
+    height="250">
+
+                <h3>Mercedes-AMG F1 W12 (2021)</h3>
+
+                <p>
+O W12 foi o último carro da Mercedes a conquistar o Campeonato Mundial de Construtores durante sua sequência de oito títulos consecutivos.
+                </p>
+                <p>
+Apesar de enfrentar uma forte concorrência da Red Bull, o modelo demonstrou grande capacidade de evolução durante a temporada. 
+As atualizações realizadas ao longo do campeonato permitiram que Hamilton recuperasse competitividade na reta final.
+O W12 ficou marcado pela disputa histórica entre Hamilton e Verstappen e pela conquista do oitavo título consecutivo da equipe.
+                </p>
+            </article>
+
+            <article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/FIA_F1_Austria_2022_Nr._44_Hamilton.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mercedes W13" width="400"
+    height="250">
+
+                <h3>Mercedes-AMG F1 W13 (2022)</h3>
+
+                <p>
+O W13 representou o início de uma nova fase técnica da Fórmula 1. Com a introdução de regulamentos que priorizavam o efeito solo, 
+a Mercedes adotou um conceito aerodinâmico bastante diferente dos concorrentes, incluindo laterais extremamente estreitas.
+                </p>
+                <p>
+Entretanto, o projeto enfrentou dificuldades com o fenômeno conhecido como porpoising, que fazia o carro oscilar verticalmente em altas velocidades. 
+A equipe terminou o campeonato em terceiro lugar, conquistando apenas uma vitória, com George Russell no Brasil.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+<script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+</body>
+</html>

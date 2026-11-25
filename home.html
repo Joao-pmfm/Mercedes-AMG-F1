@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercedes-AMG Petronas F1 Team</title>
+<meta name="description" content="Site sobre a equipe Mercedes-AMG Petronas de Fórmula 1: pilotos, história, carro e mais.">
+<link rel="stylesheet" href="style.css">
+<script src="acessibilidade.js"></script>
+</head>
+
+<body id="pag-fundo">
+
+<header id="nav-bar">
+  <section id="logo">
+   <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+</section>
+  <nav aria-label="Principal">
+    <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+  </nav>
+   <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+<main id="topo">
+
+  <section>
+    <h1>Mercedes-AMG Petronas F1 Team</h1>
+    <p>Oito títulos seguidos de construtores, uma fábrica em Brackley e uma obsessão por performance. Conheça os pilotos, a história e o carro da Flecha de Prata.</p>
+    <a href="#pilotos">Ver pilotos</a>
+    <a href="#historia">Nossa história</a>
+  </section>
+
+  <section>
+    <ul>
+      <li><strong>9</strong> títulos de construtores (2014–2021)</li>
+      <li><strong>10</strong> títulos de pilotos (1954, 1955 e 2014–2020)</li>
+      <li><strong>Brackley</strong> sede da equipe, Inglaterra</li>
+      <li><strong>Brixworth</strong> fábrica dos motores</li>
+    </ul>
+  </section>
+
+  <section id="carrossel" aria-roledescription="carrossel" aria-label="Fotos da equipe">
+    <div class="car-janela">
+      <div class="car-trilho">
+
+        <div class="car-slide">
+          <img src="IMG/kimi-860x484.jpg" >
+        </div>
+
+        <div class="car-slide">
+          <img src="IMG/Equipe.jpg" >
+        </div>
+
+        <div class="car-slide">
+          <img src="IMG/dupla.avif">
+        </div>
+
+      </div>
+
+      <button type="button" class="car-btn car-anterior" aria-label="Foto anterior">‹</button>
+      <button type="button" class="car-btn car-proximo" aria-label="Próxima foto">›</button>
+      <button type="button" class="car-pausa" aria-label="Pausar troca automática">⏸</button>
+    </div>
+
+    <div class="car-pontos"></div>
+  </section>
+
+  <section id="pilotos">
+    <h2>Pilotos</h2>
+    <p>A dupla que representa a Flecha de Prata nas pistas. Confira sempre o site oficial da Fórmula 1 para a formação mais atual do grid.</p>
+
+    <article>
+      <p>63</p>
+      <h3>George Russell</h3>
+      <p>Reino Unido · nascido em 1998</p>
+      <p>Formado na academia de jovens pilotos da Mercedes, passou pela Williams antes de assumir uma vaga na equipe principal em 2022. Rápido na classificação e líder dentro da equipe, venceu corridas pela Mercedes e é conhecido pela precisão técnica.</p>
+    </article>
+
+    <article>
+      <p>12</p>
+      <h3>Kimi Antonelli</h3>
+      <p>Itália · nascido em 2006</p>
+      <p>Jovem talento italiano revelado pelo programa de pilotos da Mercedes. Chegou à Fórmula 1 em 2025 ainda adolescente, como um dos mais jovens estreantes da história, e representa a nova geração da equipe.</p>
+    </article>
+  </section>
+
+  <section id="historia">
+    <h2>História</h2>
+    <p>Do Grande Prêmio dos anos 1930 à era de maior domínio da Fórmula 1 moderna.</p>
+    <ol>
+      <li>
+        <time>Anos 1930</time>
+        <h3>Nascem as Flechas de Prata</h3>
+        <p>Os carros de corrida alemães da Mercedes-Benz, sem pintura para ficar mais leves e exibindo o alumínio prateado, ganham o apelido que dura até hoje.</p>
+      </li>
+      <li>
+        <time>1954 e 1955</time>
+        <h3>Primeira passagem pela F1</h3>
+        <p>Com Juan Manuel Fangio, a Mercedes-Benz conquista os títulos de pilotos de 1954 e 1955 e deixa as competições logo depois.</p>
+      </li>
+      <li>
+        <time>2010</time>
+        <h3>Retorno como equipe</h3>
+        <p>A marca volta à Fórmula 1 como construtora, comprando a Brawn GP, campeã em 2009. A equipe passa a ter base em Brackley, na Inglaterra.</p>
+      </li>
+      <li>
+        <time>2014–2021</time>
+        <h3>A era dominante</h3>
+        <p>Com a chegada dos motores híbridos V6 turbo, a Mercedes vence oito campeonatos de construtores seguidos. Lewis Hamilton conquista seis títulos de pilotos (2014, 2015, 2017, 2018, 2019 e 2020) e Nico Rosberg leva o de 2016.</p>
+      </li>
+      <li>
+        <time>2022 em diante</time>
+        <h3>Nova era de regras</h3>
+        <p>A equipe se reorganiza diante das mudanças de regulamento e segue na briga por vitórias, com foco em desenvolvimento e em uma nova geração de pilotos.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="carro">
+    <h2>O carro</h2>
+    <p>Cada temporada, a equipe projeta um novo monoposto em Brackley, com motor desenvolvido em Brixworth. Para 2026, a Fórmula 1 recebeu um regulamento novo, e o carro da Mercedes é o W17.</p>
+
+    <div>
+      <h3>Unidade de potência</h3>
+      <p>Produzida pela Mercedes-AMG High Performance Powertrains, em Brixworth. Referência em eficiência desde a era híbrida de 2014.</p>
+    </div>
+    <div>
+      <h3>Aerodinâmica</h3>
+      <p>Túnel de vento e simulações em computador guiam o desenho de asas e assoalho. É onde a equipe busca décimos de segundo a cada atualização.</p>
+    </div>
+    <div>
+      <h3>Pintura</h3>
+      <p>Prata e verde petrolina, a cor do patrocinador principal. A tradição das Flechas de Prata continua visível em cada detalhe.</p>
+    </div>
+    <div>
+      <h3>Regulamento 2026</h3>
+      <p>Carros mais leves e compactos, com aerodinâmica ativa e maior participação da energia elétrica na potência total.</p>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <h2>Equipe e informações</h2>
+
+    <div>
+      <h3>Liderança</h3>
+      <p>Toto Wolff é o chefe de equipe e CEO desde 2013, responsável por conduzir a estrutura que conquistou a era de maior sucesso do time.</p>
+    </div>
+    <div>
+      <h3>Estrutura</h3>
+      <p>Cerca de mil pessoas trabalham entre a sede de chassi, em Brackley, e a fábrica de motores, em Brixworth, ambas no Reino Unido.</p>
+    </div>
+    <div>
+      <h3>Patrocinadores</h3>
+      <p>A Petronas é parceira principal desde o retorno em 2010. Outras marcas globais completam o grupo de parceiros técnicos e comerciais.</p>
+    </div>
+    <div>
+      <h3>Programa de jovens pilotos</h3>
+      <p>A Mercedes investe cedo em talentos do kart e das categorias de base. Russell e Antonelli saíram desse caminho.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+<script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+    <script src="carrosel.js"></script>
+</body>
+</html>

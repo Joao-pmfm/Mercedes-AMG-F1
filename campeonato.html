@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas | Campeonato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="acessibilidade.js"></script>
+</head>
+<body>
+
+    <header id="nav-bar">
+       <section id="logo">
+        <img src="IMG/MF1_team_logo_Registered-Negative_full_colour (1).webp" alt="Mercedes-AMG Petronas" width="180">
+    </section>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="pilotos.html">Pilotos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="histórico.html">Histórico</a>
+            <a href="campeonato.html">Campeonato</a>
+            <a href="carro.html">Carro</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+
+       <button type="button" id="abrir-conta" aria-label="Abrir minha conta">
+            👤 Minha conta
+        </button>
+    </header>
+
+    <dialog id="janela-conta">
+        <button type="button" id="fechar-conta">X</button>
+
+        <section id="login-cadastro">
+            <h2>Minha conta</h2>
+
+            <div id="area-login">
+                <h3>Entrar na conta</h3>
+
+                <form id="form-login">
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required placeholder="Digite sua senha">
+
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem uma conta?
+                    <button type="button" id="mostrar-cadastro">Cadastre-se aqui</button>
+                </p>
+            </div>
+
+            <hr id="divisor-conta" hidden>
+
+            <div id="area-cadastro" hidden>
+                <h3>Criar uma conta</h3>
+
+                <form id="form-cadastro">
+                    <label for="nome-cadastro">Nome completo:</label>
+                    <input type="text" id="nome-cadastro" required placeholder="Digite seu nome">
+
+                    <label for="email-cadastro">E-mail:</label>
+                    <input type="email" id="email-cadastro" required placeholder="Digite seu e-mail">
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" required minlength="6" placeholder="Crie uma senha">
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" required minlength="6" placeholder="Digite a senha novamente">
+
+                    <button type="submit">Criar conta</button>
+                </form>
+
+                <p>
+                    Já tem uma conta?
+                    <button type="button" id="mostrar-login">Entrar</button>
+                </p>
+            </div>
+
+            <div id="area-usuario" hidden>
+                <h3>Bem-vindo(a)!</h3>
+                <p id="mensagem-usuario"></p>
+                <button type="button" id="botao-sair">Sair da conta</button>
+            </div>
+
+            <p id="mensagem-conta" aria-live="polite"></p>
+        </section>
+    </dialog>
+
+    </header>
+
+<main>
+        <h1>Campeonato Mundial de Fórmula 1 – 2026</h1>
+        <p>Classificação após o Grande Prêmio de Las Vegas, realizado em 22 de novembro de 2026.</p>
+
+        <section>
+            <h2>Campeonato de Pilotos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Piloto</th>
+                        <th>Equipe</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="mercedes"><td>1</td><td>Kimi Antonelli</td><td>Mercedes-AMG Petronas</td><td>402</td></tr>
+                    <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>304</td></tr>
+                    <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>267</td></tr>
+                    <tr class="mercedes"><td>4</td><td>George Russell</td><td>Mercedes-AMG Petronas</td><td>264</td></tr>
+                    <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>264</td></tr>
+                    <tr><td>6</td><td>Charles Leclerc</td><td>Ferrari</td><td>250</td></tr>
+                    <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>167</td></tr>
+                    <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>122</td></tr>
+                    <tr><td>9</td><td>Liam Lawson</td><td>Racing Bulls</td><td>89</td></tr>
+                    <tr><td>10</td><td>Pierre Gasly</td><td>Alpine</td><td>52</td></tr>
+                    <tr><td>11</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>38</td></tr>
+                    <tr><td>12</td><td>Franco Colapinto</td><td>Alpine</td><td>35</td></tr>
+                    <tr><td>13</td><td>Oliver Bearman</td><td>Haas</td><td>23</td></tr>
+                    <tr><td>14</td><td>Gabriel Bortoleto</td><td>Audi</td><td>14</td></tr>
+                    <tr><td>15</td><td>Nico Hülkenberg</td><td>Audi</td><td>14</td></tr>
+                    <tr><td>16</td><td>Carlos Sainz</td><td>Williams</td><td>11</td></tr>
+                    <tr><td>17</td><td>Esteban Ocon</td><td>Haas</td><td>7</td></tr>
+                    <tr><td>18</td><td>Fernando Alonso</td><td>Aston Martin</td><td>7</td></tr>
+                    <tr><td>19</td><td>Alexander Albon</td><td>Williams</td><td>5</td></tr>
+                    <tr><td>20</td><td>Yuki Tsunoda</td><td>Racing Bulls</td><td>1</td></tr>
+                    <tr><td>21</td><td>Ryo Hirakawa</td><td>Haas</td><td>1</td></tr>
+                    <tr><td>22</td><td>Lance Stroll</td><td>Aston Martin</td><td>0</td></tr>
+                    <tr><td>23</td><td>Valtteri Bottas</td><td>Cadillac</td><td>0</td></tr>
+                    <tr><td>24</td><td>Sergio Pérez</td><td>Cadillac</td><td>0</td></tr>
+                    <tr><td>25</td><td>Rafael Câmara</td><td>Haas</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Campeonato de Construtores</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Equipe</th>
+                        <th>Vitórias</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="mercedes"><td>1</td><td>Mercedes-AMG Petronas </td><td>12</td><td>666</td></tr>
+                    <tr><td>2</td><td>Ferrari</td><td>2</td><td>517</td></tr>
+                    <tr><td>3</td><td>Red Bull</td><td>4</td><td>440</td></tr>
+                    <tr><td>4</td><td>McLaren</td><td>3</td><td>431</td></tr>
+                    <tr><td>5</td><td>Racing Bulls</td><td>0</td><td>114</td></tr>
+                    <tr><td>6</td><td>Alpine</td><td>0</td><td>87</td></tr>
+                    <tr><td>7</td><td>Haas</td><td>0</td><td>31</td></tr>
+                    <tr><td>8</td><td>Audi</td><td>0</td><td>28</td></tr>
+                    <tr><td>9</td><td>Williams</td><td>0</td><td>16</td></tr>
+                    <tr><td>10</td><td>Aston Martin</td><td>0</td><td>7</td></tr>
+                    <tr><td>11</td><td>Cadillac</td><td>0</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <p><strong> Mercedes-AMG Petronas é campeã do Mundial de Construtores de 2026.</strong></p>
+        <p><small>Classificação atualizada em 24/11/2026. Os resultados podem mudar após as próximas etapas.</small></p>
+    </main>
+
+   <footer id="contato">
+  <p><strong>Mercedes-AMG Petronas F1 Team</strong><br>Brackley, Northamptonshire, Reino Unido</p>
+  <p>Site de fãs, sem vínculo oficial com a equipe.<br>Mercedes, AMG e Petronas são marcas de seus respectivos donos.</p>
+</footer>
+
+<script>
+        // Recupera as contas cadastradas no navegador.
+        let usuarios = JSON.parse(
+            localStorage.getItem("usuariosMercedes")
+        ) || [];
+
+        // Recupera a sessão atual.
+        let usuarioLogado = JSON.parse(
+            localStorage.getItem("usuarioLogadoMercedes")
+        ) || null;
+
+        const formularioLogin = document.getElementById("form-login");
+        const formularioCadastro = document.getElementById("form-cadastro");
+
+        const areaLogin = document.getElementById("area-login");
+        const areaCadastro = document.getElementById("area-cadastro");
+        const areaUsuario = document.getElementById("area-usuario");
+
+        const mensagemConta = document.getElementById("mensagem-conta");
+
+        function salvarUsuarios() {
+            localStorage.setItem(
+                "usuariosMercedes",
+                JSON.stringify(usuarios)
+            );
+        }
+
+        // Atualiza a tela de acordo com o estado da conta.
+        function atualizarConta() {
+            if (usuarioLogado) {
+                areaLogin.hidden = true;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = false;
+
+                document.getElementById("mensagem-usuario").textContent =
+                    "Olá, " + usuarioLogado.nome + "! Você está conectado.";
+
+            } else {
+                areaLogin.hidden = false;
+                areaCadastro.hidden = true;
+                areaUsuario.hidden = true;
+            }
+        }
+
+        // Criar uma nova conta.
+        formularioCadastro.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const nome = document.getElementById("nome-cadastro").value.trim();
+            const email = document.getElementById("email-cadastro").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-cadastro").value;
+            const confirmarSenha = document.getElementById("confirmar-senha").value;
+
+            if (senha.length < 6) {
+                mensagemConta.textContent =
+                    "A senha precisa ter pelo menos 6 caracteres.";
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                mensagemConta.textContent = "As senhas não são iguais.";
+                return;
+            }
+
+            const emailExistente = usuarios.find(function(usuario) {
+                return usuario.email === email;
+            });
+
+            if (emailExistente) {
+                mensagemConta.textContent =
+                    "Este e-mail já possui uma conta cadastrada.";
+                return;
+            }
+
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            usuarios.push(novoUsuario);
+            salvarUsuarios();
+
+            usuarioLogado = {
+                nome: novoUsuario.nome,
+                email: novoUsuario.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioCadastro.reset();
+
+            mensagemConta.textContent = "Conta criada com sucesso!";
+            atualizarConta();
+        });
+
+        // Entrar em uma conta existente.
+        formularioLogin.addEventListener("submit", function(evento) {
+            evento.preventDefault();
+
+            const email = document.getElementById("email-login").value.trim().toLowerCase();
+            const senha = document.getElementById("senha-login").value;
+
+            const usuarioEncontrado = usuarios.find(function(usuario) {
+                return usuario.email === email && usuario.senha === senha;
+            });
+
+            if (!usuarioEncontrado) {
+                mensagemConta.textContent = "E-mail ou senha incorretos.";
+                return;
+            }
+
+            usuarioLogado = {
+                nome: usuarioEncontrado.nome,
+                email: usuarioEncontrado.email
+            };
+
+            localStorage.setItem(
+                "usuarioLogadoMercedes",
+                JSON.stringify(usuarioLogado)
+            );
+
+            formularioLogin.reset();
+
+            mensagemConta.textContent = "Login realizado com sucesso!";
+            atualizarConta();
+        });
+
+        // Sair da conta.
+        document.getElementById("botao-sair").addEventListener(
+            "click",
+            function() {
+                usuarioLogado = null;
+
+                localStorage.removeItem("usuarioLogadoMercedes");
+
+                mensagemConta.textContent = "Você saiu da sua conta.";
+                atualizarConta();
+            }
+        );
+
+        // Verifica se já existe uma sessão ao abrir a página.
+        atualizarConta();
+    </script>
+
+    <script>
+        // Controla a janela de login e cadastro.
+        const janelaConta = document.getElementById("janela-conta");
+        const botaoAbrirConta = document.getElementById("abrir-conta");
+
+        botaoAbrirConta.addEventListener("click", function() {
+            atualizarConta();
+            janelaConta.showModal();
+        });
+
+        document.getElementById("fechar-conta").addEventListener(
+            "click",
+            function() {
+                janelaConta.close();
+            }
+        );
+
+        document.getElementById("mostrar-cadastro").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-login").hidden = true;
+                document.getElementById("area-cadastro").hidden = false;
+                document.getElementById("divisor-conta").hidden = false;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+
+        document.getElementById("mostrar-login").addEventListener(
+            "click",
+            function() {
+                document.getElementById("area-cadastro").hidden = true;
+                document.getElementById("area-login").hidden = false;
+                document.getElementById("divisor-conta").hidden = true;
+                document.getElementById("mensagem-conta").textContent = "";
+            }
+        );
+    </script>
+</body>
+</html>

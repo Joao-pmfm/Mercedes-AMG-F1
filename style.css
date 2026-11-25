@@ -1,0 +1,676 @@
+:root {
+  --verde: #00a79d;
+  --preto: #000;
+  --cinza: #1a1a1a;
+  --linha: #c8c8c8;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: #000;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #000;
+
+  color: var(--verde);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  line-height: 1.6;
+}
+a { color: var(--verde); }
+
+:root {
+  --texto: #ffffff;
+}
+
+main p,
+main li,
+main td,
+main time,
+main small,
+main strong,
+main span,
+footer p {
+  color: var(--texto);
+}
+
+/*títulos e subtítulos*/
+main h1,
+main h2,
+main h3,
+main h4 {
+  color: var(--verde);
+}
+
+/*links*/
+main a {
+  color: var(--verde);
+}
+
+/*caixas de informação*/
+main li {
+  color: var(--texto);
+}
+
+/*tabela*/
+main thead th {
+  color: #000;
+}
+
+/* CABEÇALHO */
+#nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 14px 24px 14px 30px;
+  background: var(--preto);
+  border-bottom: 3px solid var(--linha);
+}
+
+#logo img {
+  display: block;
+  width: 50px;      
+  height: auto;
+}
+
+#nav-bar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+#nav-bar nav a {
+  color: var(--verde);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#nav-bar nav a:hover,
+#nav-bar nav a.ativo {
+  text-decoration: underline;
+  text-decoration-color: #777;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/*Minha conta*/
+#abrir-conta {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--verde);
+  font-family: inherit;
+  font-size: .85rem;
+  cursor: pointer;
+}
+#abrir-conta:hover { text-decoration: underline; }
+
+/*CONTEÚDO*/
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px 60px;
+}
+
+main section { margin-bottom: 70px; }
+
+main h1, main h2, main h3 {
+  font-weight: 400;
+  margin: 0 0 .5rem;
+}
+main h1 { font-size: 1.3rem; }
+main h2 {
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--verde);
+}
+main h3 { font-size: 1.1rem; }
+main p  { margin: 0 0 .8rem; }
+
+/*HERO/FOTO*/
+.hero {
+  display: grid;
+  grid-template-columns: 408px 1fr;
+  column-gap: 76px;
+  align-items: start;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 10;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background: #222 url('img/pilotos.jpg') center / cover no-repeat;
+}
+
+.hero > * { grid-column: 2; }
+
+.hero h1 { font-size: 1.2rem; }
+
+.hero a {
+  display: inline-block;
+  margin: .5rem .6rem 0;
+}
+
+/*LISTA DE NÚMEROS*/
+main section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+main section ul li {
+  padding: 16px;
+  border: 1px solid var(--verde);
+  text-align: center;
+}
+main section ul li strong {
+  display: block;
+  font-size: 1.8rem;
+}
+
+/*CARDS*/
+article,
+#carro > div,
+#equipe > div {
+  background: var(--cinza);
+  border: 1px solid #0b4f4a;
+  border-left: 4px solid var(--verde);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+article > p:first-child {        
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+}
+
+#carro, #equipe { display: block; }
+
+/*história*/
+#historia ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--verde);
+}
+#historia li { margin-bottom: 24px; }
+#historia time {
+  display: block;
+  font-size: .85rem;
+  opacity: .8;
+}
+
+/*RODAPÉ*/
+footer#contato {
+  padding: 24px;
+  text-align: center;
+  font-size: .85rem;
+  border-top: 3px solid var(--linha);
+}
+
+/*JANELA DE LOGIN*/
+dialog#janela-conta {
+  width: min(420px, 92vw);
+  padding: 24px;
+  background: var(--preto);
+  color: var(--verde);
+  border: 2px solid var(--verde);
+  font-family: inherit;
+}
+dialog#janela-conta::backdrop { background: rgba(0, 0, 0, .75); }
+
+#fechar-conta {
+  float: right;
+  background: none;
+  border: 1px solid var(--verde);
+  color: var(--verde);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#login-cadastro h2 { border: 0; font-size: 1.4rem; }
+
+#janela-conta form { display: grid; gap: 8px; }
+
+#janela-conta input {
+  padding: 10px;
+  background: var(--cinza);
+  border: 1px solid var(--verde);
+  color: #fff;
+  font-family: inherit;
+}
+
+#janela-conta button[type="submit"] {
+  margin-top: 8px;
+  padding: 10px;
+  background: var(--verde);
+  border: 0;
+  color: #000;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#mostrar-cadastro, #mostrar-login, #botao-sair {
+  background: none;
+  border: 0;
+  color: var(--verde);
+  font-family: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#divisor-conta { border-color: var(--verde); margin: 20px 0; }
+
+/*RESPONSIVO*/
+@media (max-width: 800px) {
+  #nav-bar { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .hero { grid-template-columns: 1fr; row-gap: 20px; }
+  .hero::before, .hero > * { grid-column: 1; grid-row: auto; }
+}
+
+/*PILOTOS*/
+#titulo-atuais, #titulo-antigos,
+[id^="piloto-"] {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+#titulo-atuais, #titulo-antigos { margin-top: 40px; }
+
+#titulo-atuais h1, #titulo-antigos h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--verde);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--verde);
+}
+
+[id^="piloto-"] {
+  background: var(--cinza);
+  border-left: 4px solid var(--verde);
+  padding: 16px 28px;
+  margin-top: 20px;
+}
+
+[id^="piloto-"] h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--verde);
+  margin: 0 0 .5rem;
+}
+
+[id^="piloto-"] p {
+  color: #fff;
+  margin: 0;
+  white-space: pre-line;   
+}
+
+
+[id^="piloto-"] {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 28px;
+  align-items: start;
+}
+
+
+[id^="piloto-"] h2 {
+  grid-column: 1 / -1;
+}
+
+
+[id^="piloto-"] img {
+  grid-column: 1;
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;  
+  display: block;
+  border: 1px solid var(--verde);
+}
+
+[id^="piloto-"] p {
+  grid-column: 2;
+}
+
+/*Equipe*/
+
+article:has(> img) {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 28px;
+  row-gap: 0;
+  align-items: start;
+}
+
+article > img {
+  grid-column: 1;
+  grid-row: 1 / span 10;     
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;   
+  display: block;
+  border: 1px solid var(--verde);
+}
+
+article:has(> img) > h3,
+article:has(> img) > p {
+  grid-column: 2;
+}
+
+article:not(:has(> img)) > p:first-child {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+main section > p {
+  color: #fff;
+}
+
+/*Tabela Camp*/
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cinza);
+  font-size: .95rem;
+  margin-top: 16px;
+}
+
+main table th,
+main table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #0b4f4a;
+}
+
+main table thead th {
+  background: var(--verde);
+  color: #000;
+  font-weight: 700;
+}
+
+main table th:first-child,
+main table td:first-child {
+  text-align: center;
+  width: 90px;
+}
+main table th:last-child,
+main table td:last-child {
+  text-align: right;
+  width: 100px;
+}
+
+main table tbody tr:hover {
+  background: #222;
+}
+
+main table tr.mercedes td {
+  background: rgba(0, 167, 157, .18);
+  font-weight: 700;
+}
+main table tr.mercedes td:first-child {
+  box-shadow: inset 4px 0 0 var(--verde);
+}
+
+/*Acessibilidade*/
+#acess-botao {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--verde);
+  color: #000;
+  border: 0;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: .9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+}
+
+#acess-painel {
+  position: fixed;
+  right: 16px;
+  bottom: 68px;
+  z-index: 1000;
+  width: min(300px, calc(100vw - 32px));
+  padding: 16px 18px;
+  background: var(--cinza);
+  color: var(--texto);
+  border: 2px solid var(--verde);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+}
+#acess-painel[hidden] { display: none; }
+
+#acess-painel h2 {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--verde);
+}
+
+.acess-grupo { margin-bottom: 14px; }
+.acess-grupo p { margin: 0 0 6px; font-size: .85rem; color: var(--texto); }
+
+.acess-linha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#acess-painel button {
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  font-family: inherit;
+  font-size: .85rem;
+  cursor: pointer;
+}
+#acess-painel button:hover:not(:disabled) { background: rgba(0, 167, 157, .2); }
+#acess-painel button:disabled { opacity: .4; cursor: not-allowed; }
+
+/* botão do tema escolhido */
+#acess-painel button[aria-pressed="true"] {
+  background: var(--verde);
+  color: #000;
+  font-weight: 700;
+}
+
+#acess-nivel {
+  min-width: 48px;
+  text-align: center;
+  color: var(--texto);
+}
+
+#acess-botao:focus-visible,
+#acess-painel button:focus-visible {
+  outline: 3px solid #ffbf00;
+  outline-offset: 2px;
+}
+
+/*MODO CLARO*/
+html[data-tema="claro"] {
+  --verde: #006f68;     
+  --preto: #ffffff;
+  --cinza: #f1f5f5;
+  --linha: #9a9a9a;
+  --texto: #111111;
+  background: #fff;
+}
+
+html[data-tema="claro"] body {
+  background: #fff;
+  color: var(--texto);
+}
+
+/*cabeçalho continua escuro*/
+html[data-tema="claro"] header,
+html[data-tema="claro"] #nav-bar {
+  background: #000;
+}
+html[data-tema="claro"] header nav a,
+html[data-tema="claro"] #abrir-conta {
+  color: #00a79d;
+}
+
+/*tabelas*/
+html[data-tema="claro"] main table thead th {
+  background: var(--verde);
+  color: #fff;
+}
+html[data-tema="claro"] main table th,
+html[data-tema="claro"] main table td {
+  border-bottom-color: #c5dcda;
+}
+html[data-tema="claro"] main table tbody tr:hover { background: #e6eeee; }
+html[data-tema="claro"] main table tr.mercedes td { background: rgba(0, 111, 104, .12); }
+
+/*cards*/
+html[data-tema="claro"] article,
+html[data-tema="claro"] #carro > div,
+html[data-tema="claro"] #equipe > div,
+html[data-tema="claro"] [id^="piloto-"] {
+  border-color: #c5dcda;
+  border-left-color: var(--verde);
+}
+
+html[data-tema="claro"] [id^="piloto-"] p,
+html[data-tema="claro"] main section > p {
+  color: var(--texto);
+}
+
+/*janela de login*/
+html[data-tema="claro"] dialog#janela-conta {
+  background: #fff;
+  color: var(--texto);
+}
+html[data-tema="claro"] dialog#janela-conta::backdrop { background: rgba(0, 0, 0, .6); }
+html[data-tema="claro"] #janela-conta input {
+  background: #fff;
+  color: var(--texto);
+}
+html[data-tema="claro"] #janela-conta button[type="submit"] { color: #fff; }
+
+html[data-tema="claro"] #acess-botao,
+html[data-tema="claro"] #acess-painel button[aria-pressed="true"] {
+  color: #fff;
+}
+
+
+
+/* CARROSSEL */
+#carrossel { position: relative; 
+width: 100%;
+  max-width: 860px; 
+  margin: 24px auto;}
+
+.car-janela {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--verde);
+  background: #000;
+}
+
+.car-trilho {
+  display: flex;
+  transition: transform .6s ease;
+}
+
+.car-slide {
+  flex: 0 0 100%;
+  position: relative;
+  margin: 0;
+}
+
+.car-slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  max-height: 540px;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+
+/* setas e pausa */
+.car-btn,
+.car-pausa {
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .6);
+  font-family: inherit;
+  cursor: pointer;
+}
+.car-btn:hover,
+.car-pausa:hover { background: rgba(0, 0, 0, .85); }
+
+.car-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.car-anterior { left: 12px; }
+.car-proximo  { right: 12px; }
+
+.car-pausa {
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+}
+
+/* bolinhas */
+.car-pontos {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.car-pontos button {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid var(--verde);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+.car-pontos button[aria-current="true"] { background: var(--verde); }
+
+.car-btn:focus-visible,
+.car-pausa:focus-visible,
+.car-pontos button:focus-visible {
+  outline: 3px solid #ffbf00;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car-trilho { transition: none; }
+}
